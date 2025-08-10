@@ -202,7 +202,7 @@ class AmazonJobsScraper:
                 job_id = job.get('id_icims', '')
                 
                 # Check if it's an SDE-1 role
-                if not any(keyword in title for keyword in ['sde 1', 'software development engineer i', 'sde i']):
+                if not any(keyword in title for keyword in ['sde 1', 'software development engineer i','software development Engineer-i', 'sde i']):
                     continue
                 
                 # Check if job was posted recently
